@@ -34,7 +34,7 @@ export default {
     color: #444;
 }
 
-.job:hover {
+.job h2:hover {
     background: #ddd;
 }
 
