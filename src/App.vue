@@ -19,10 +19,10 @@ redirect() {
 
 },
 back() {
-
+this.$router.go(-1)
 },
 forward() {
-
+this.$router.go(1)
 }
   }
 }
