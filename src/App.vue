@@ -4,9 +4,11 @@
     <router-link :to="{name:'About'}">About</router-link>
     <router-link :to="{name:'Jobs'}">Jobs</router-link>
   </nav>
-  <button @click="redirect" >Redirect</button>
-  <button @click="back">Go back</button>
-  <button @click="forward">Go forward</button>
+  <div class="buttons">
+    <button @click="redirect" >Redirect</button>
+    <button @click="back">Go back</button>
+    <button @click="forward">Go forward</button>
+  </div>
   <router-view/>
 </template>
 
@@ -53,5 +55,22 @@ nav a.router-link-exact-active {
   background: crimson;
 }
 
+.buttons{
+  height: 80px;
+}
+
+button {
+  margin: 0 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: 200ms all ease-in-out;
+}
+
+button:hover {
+  border-bottom: 2px solid black;
+  background: rgb(185, 183, 183);
+}
 
 </style>
