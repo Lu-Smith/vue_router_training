@@ -15,14 +15,14 @@
 <script>
 export default {
   methods: {
-redirect() {
-
-},
-back() {
-this.$router.go(-1)
-},
-forward() {
-this.$router.go(1)
+    redirect() {
+    this.$router.push({name: 'Home'})
+    },
+    back() {
+    this.$router.go(-1)
+    },
+    forward() {
+    this.$router.go(1)
 }
   }
 }
